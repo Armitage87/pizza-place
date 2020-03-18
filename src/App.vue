@@ -1,7 +1,29 @@
 <template>
   <div id="app">
+    <div class="container">
+      <pp-header></pp-header>
+    </div>
+    <div class="container">
+      <pp-home></pp-home>
+    </div>
+    <div class="container">
+      <pp-footer></pp-footer>
+    </div>
   </div>
 </template>
 
-<style>
-</style>
+<script>
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Home from "@/components/Home";
+
+export default {
+  components: {
+    ppHeader: Header,
+    ppFooter: Footer,
+    ppHome: Home
+  }
+};
+</script>
+
+<style></style>
